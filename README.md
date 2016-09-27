@@ -47,26 +47,32 @@ lpv.setOnCompleteListener(new OnCompleteListener() {
  }
  ```
  - 设置view不可触摸
+
  ``` java
 lpv.disableTouch();
 ```
  - 设置错误
+
  ``` java
 lpv.error();
 ```
  - 清空
+
  ``` java
 lpv.clearPassword();
 ```
  - 保存密码
+
  ``` java
 lpv.setPassWord();
 ```
  - 获取密码
+
  ``` java
 lpv.getPassWord();
 ```
  - 设置小键盘显示
+ 
  ``` java
  LockPatternSmallView lps=(LockPatternSmallView)findViewById();
 lps.setOndraw(str);
