@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LockPatternAttrs">
+        <attr name="pressColor" format="color" />
+        <attr name="initColor" format="color" />
+        <attr name="errorColor" format="color" />
+        <attr name="style" format="integer" />
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+</resources>

@@ -9,10 +9,10 @@ import android.os.Message;
 import android.widget.TextView;
 
 import com.module.lockpattern.R;
-import com.zjm.GestureLock.Utils.Paint;
-import com.zjm.GestureLock.Utils.Style;
-import com.zjm.GestureLock.View.LockPatternSmallView;
-import com.zjm.GestureLock.View.LockPatternView;
+
+import loner.widget.lockpattern.model.OnCompleteListener;
+import loner.widget.lockpattern.view.LockPatternSmallView;
+import loner.widget.lockpattern.view.LockPatternView;
 
 
 /**
@@ -20,45 +20,32 @@ import com.zjm.GestureLock.View.LockPatternView;
  */
 public class MainActivity extends Activity {
 
-    private final int FIST_RIGHT_MSG=0;
+    private final int FIST_RIGHT_MSG = 0;
 
-    private final int SECOND_RIGHT_MSG=1;
+    private final int SECOND_RIGHT_MSG = 1;
 
-    private final int LAST_RIGHT_MSG=2;
-    private final int SECOND_WRONG_MSG=3;
+    private final int LAST_RIGHT_MSG = 2;
+    private final int SECOND_WRONG_MSG = 3;
 
 
     private LockPatternView lpv;
-    private LockPatternSmallView lpvs;
     private TextView txtTitle;
 
-    private boolean isFirstSet=false;
     private String FirstPassword;
-    private boolean isSecondSet=false;
+    private boolean isSecondSet = false;
     private LockPatternSmallView smallView;
-
-    private Paint paint;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        txtTitle=(TextView)findViewById(R.id.txt_main_title);
+        txtTitle = (TextView) findViewById(R.id.txt_main_title);
 
-        lpv=(LockPatternView)findViewById(R.id.mLocusPassWordViewFirstRegister);
-        paint=new Paint();
+        lpv = (LockPatternView) findViewById(R.id.mLocusPassWordViewFirstRegister);
 
-        paint.setStyle(Style.ZHIFUBAO);
-        paint.setErrorColor(Paint.RED);
-        paint.setTopColor(Paint.GREEN);
-        paint.setBottomColor(Paint.WHITE);
-        lpv.setPaint(paint);
-
-        lpvs=(LockPatternSmallView)findViewById(R.id.mLocusPassWordViewFirstRegisterSmall);
-        lpvs.setPaint(paint);
-
-        lpv.setOnCompleteListener(new LockPatternView.OnCompleteListener() {
+        lpv.setPasswordMinLength(3);
+        lpv.setOnCompleteListener(new OnCompleteListener() {
             @Override
             public void onComplete(String mPassword) {
 
@@ -80,7 +67,7 @@ public class MainActivity extends Activity {
                             }
                         }).start();
                     } else {//密码位数正确
-                        if(FirstPassword.equals(mPassword)){//两次密码一致
+                        if (FirstPassword.equals(mPassword)) {//两次密码一致
                             lpv.setPassWord(mPassword);
                             txtTitle.setText("设置完成");
                             txtTitle.setTextColor(Color.WHITE);
@@ -97,7 +84,7 @@ public class MainActivity extends Activity {
                                     startActivity(intent);
                                 }
                             }).start();
-                        }else{
+                        } else {
                             txtTitle.setText("两次密码不一致");
                             txtTitle.setTextColor(Color.RED);
                             lpv.error();
@@ -137,10 +124,9 @@ public class MainActivity extends Activity {
                     } else {
                         Message msg = new Message();
                         msg.what = SECOND_RIGHT_MSG;
-                        FirstPassword=mPassword;
+                        FirstPassword = mPassword;
                         handler.sendMessage(msg);
                         lpv.clearPassword();
-                        lpvs.setOndraw(FirstPassword);
                         isSecondSet = true;
                     }
                 }
@@ -206,7 +192,7 @@ public class MainActivity extends Activity {
 
     }
 
-   public Handler handler = new Handler() {
+    public Handler handler = new Handler() {
 
         @Override
         public void handleMessage(Message msg) {

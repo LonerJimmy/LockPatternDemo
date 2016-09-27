@@ -3,8 +3,4 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <color name="transparent">#00ffffff</color>
-    <color name="transparent_gray">#33000000</color>
-    <color name="press_gray">#ffd9d9d9</color>
-    <color name="press_gray_t">#44888888</color>
 </resources>
