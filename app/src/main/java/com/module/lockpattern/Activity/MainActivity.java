@@ -43,6 +43,7 @@ public class MainActivity extends Activity {
         txtTitle = (TextView) findViewById(R.id.txt_main_title);
 
         lpv = (LockPatternView) findViewById(R.id.mLocusPassWordViewFirstRegister);
+        smallView = (LockPatternSmallView) findViewById(R.id.mLocusPassWordViewSmall);
 
         lpv.setPasswordMinLength(3);
         lpv.setOnCompleteListener(new OnCompleteListener() {
@@ -71,6 +72,7 @@ public class MainActivity extends Activity {
                             lpv.setPassWord(mPassword);
                             txtTitle.setText("设置完成");
                             txtTitle.setTextColor(Color.WHITE);
+                            smallView.setOndraw(mPassword);
                             lpv.disableTouch();
                             new Thread(new Runnable() {//跳转到下一个界面
                                 public void run() {

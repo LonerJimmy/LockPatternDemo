@@ -5,6 +5,6 @@
         <attr name="initColor" format="color" />
         <attr name="errorColor" format="color" />
         <attr name="style" format="integer" />
-        <attr name="radius" format="dimension"/>
+        <attr name="radius" format="dimension" />
     </declare-styleable>
 </resources>

@@ -18,18 +18,25 @@
             android:id="@+id/txt_main_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="请输入手势密码"
             android:textColor="#ffffff"
             android:textSize="18dp" />
+
+        <loner.widget.lockpattern.view.LockPatternSmallView
+            android:id="@+id/mLocusPassWordViewSmall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"></loner.widget.lockpattern.view.LockPatternSmallView>
     </LinearLayout>
 
 
     <loner.widget.lockpattern.view.LockPatternView
         android:id="@+id/mLocusPassWordViewFirstRegister"
         android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        app:radius="30dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"></loner.widget.lockpattern.view.LockPatternView>
 
     <LinearLayout

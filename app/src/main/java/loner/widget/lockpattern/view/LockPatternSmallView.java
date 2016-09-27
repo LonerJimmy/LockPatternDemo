@@ -37,11 +37,11 @@ public class LockPatternSmallView extends View {
     }
 
     public LockPatternSmallView(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
     }
 
     public LockPatternSmallView(Context context) {
-        super(context);
+        this(context, null, 0);
     }
 
     public void setPaint(LockPaint paint) {
