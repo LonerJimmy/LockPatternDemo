@@ -16,7 +16,7 @@ import loner.library.gesture.view.LockPatternView;
 
 
 /**
- * Created by lenovo on 2015/9/7.
+ * Created by loner on 2015/9/7.
  */
 public class MainActivity extends Activity {
 

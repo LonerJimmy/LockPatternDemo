@@ -9,7 +9,7 @@ import android.widget.Button;
 import com.module.lockpattern.R;
 
 /**
- * Created by lenovo on 2015/9/8.
+ * Created by loner on 2015/9/8.
  */
 public class FirstActivity extends Activity {
 

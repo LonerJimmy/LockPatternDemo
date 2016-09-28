@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.module.lockpattern.R;
 
 /**
- * Created by lenovo on 2015/9/9.
+ * Created by loner on 2015/9/9.
  */
 public class PasswordShow extends Activity {
 
