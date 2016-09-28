@@ -31,7 +31,7 @@ compile 'loner.library.gesture:gesture:1.0.1'
         android:layout_gravity="center"></loner.widget.lockpattern.view.LockPatternView>
 ```
 
-这里有几个属性简单介绍一下(使用方法就是在view下面添加app:pressColor="“)：
+这里有几个属性简单介绍一下(使用方法就是在view下面添加app:pressColor="")：
 -  pressColor表示按下是按钮的颜色。 
 -  initColor表示初始时按钮的颜色。
 -  errorColor表示按下是按钮的颜色。 
