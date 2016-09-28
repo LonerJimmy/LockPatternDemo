@@ -1,4 +1,4 @@
-package loner.widget.lockpattern.view;
+package loner.library.gesture.view;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -10,15 +10,16 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.module.lockpattern.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import loner.widget.lockpattern.model.OnCompleteListener;
-import loner.widget.lockpattern.util.LockPaint;
-import loner.widget.lockpattern.util.Point;
-import loner.widget.lockpattern.util.Style;
+import loner.library.gesture.R;
+import loner.library.gesture.model.OnCompleteListener;
+import loner.library.gesture.util.LockPaint;
+import loner.library.gesture.util.Point;
+import loner.library.gesture.util.Style;
+
 
 /**
  * Created by loner on 2015/9/8.

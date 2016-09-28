@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
@@ -24,20 +23,20 @@
             android:textColor="#ffffff"
             android:textSize="18dp" />
 
-        <loner.widget.lockpattern.view.LockPatternSmallView
+        <loner.library.gesture.view.LockPatternSmallView
             android:id="@+id/mLocusPassWordViewSmall"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_weight="1"></loner.widget.lockpattern.view.LockPatternSmallView>
+            android:layout_weight="1"></loner.library.gesture.view.LockPatternSmallView>
     </LinearLayout>
 
 
-    <loner.widget.lockpattern.view.LockPatternView
+    <loner.library.gesture.view.LockPatternView
         android:id="@+id/mLocusPassWordViewFirstRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"></loner.widget.lockpattern.view.LockPatternView>
+        android:layout_gravity="center"></loner.library.gesture.view.LockPatternView>
 
     <LinearLayout
         android:layout_width="match_parent"

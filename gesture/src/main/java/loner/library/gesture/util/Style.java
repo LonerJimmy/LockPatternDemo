@@ -1,4 +1,4 @@
-package loner.widget.lockpattern.util;
+package loner.library.gesture.util;
 
 /**
  * Created by loner on 2015/9/9.

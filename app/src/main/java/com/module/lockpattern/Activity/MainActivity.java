@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 import com.module.lockpattern.R;
 
-import loner.widget.lockpattern.model.OnCompleteListener;
-import loner.widget.lockpattern.view.LockPatternSmallView;
-import loner.widget.lockpattern.view.LockPatternView;
+import loner.library.gesture.model.OnCompleteListener;
+import loner.library.gesture.view.LockPatternSmallView;
+import loner.library.gesture.view.LockPatternView;
 
 
 /**
