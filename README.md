@@ -30,17 +30,8 @@ compile 'loner.library.gesture:gesture:1.0.1'
         app:radius="30dp"
         android:layout_gravity="center"></loner.widget.lockpattern.view.LockPatternView>
 ```
-在values/attrs.xml中添加
-``` java
-<declare-styleable name="LockPatternAttrs">
-        <attr name="pressColor" format="color" />
-        <attr name="initColor" format="color" />
-        <attr name="errorColor" format="color" />
-        <attr name="style" format="integer" />
-        <attr name="radius" format="dimension"/>
-    </declare-styleable>
-```
-这里几个属性简单介绍一下：
+
+这里有几个属性简单介绍一下(使用方法就是在view下面添加app:pressColor="“)：
 -  pressColor表示按下是按钮的颜色。 
 -  initColor表示初始时按钮的颜色。
 -  errorColor表示按下是按钮的颜色。 
