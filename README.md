@@ -95,7 +95,7 @@ lps.setOndraw(str);
 
 
 具体使用，可以看一下这个项目中的代码或者看一下我的博客，地址如下：
-http://loner.pub/2016/09/29/android%E8%87%AA%E5%AE%9A%E4%B9%89%E6%89%8B%E5%8A%BF%E8%A7%A3%E9%94%81/
+http://loner.pub
 
 
 
